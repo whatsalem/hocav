@@ -34,7 +34,7 @@
       <button>Save</button> 
     </form>
     <div *ngFor="let result of results">
-      {{result.name}}
+      {{result.name}}<button (click)="delete(result.id)">delete</button> 
     </div>
     <!-- Example row of columns -->
     <div class="row">
