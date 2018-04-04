@@ -8,6 +8,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AboutComponent implements OnInit {
 results: any;
+name:any;
+email:any;
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
