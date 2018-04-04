@@ -11,5 +11,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  onClickMe() {
+    alert("Hello! I am an alert box!!");
+  }
 }
