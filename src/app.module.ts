@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -23,8 +22,5 @@ import { routing } from './app.routing';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule, routing ],
   declarations: [ AppComponent, HelloComponent, AppLayoutComponent, SiteLayoutComponent, AppHeaderComponent, SiteHeaderComponent, SiteFooterComponent, LoginComponent, DashboardComponent, HomeComponent, AboutComponent, RegisterComponent, ProfileComponent ],
-  bootstrap(AppComponent, [
-  ROUTER_PROVIDERS,
-  {provide: LocationStrategy, useClass: HashLocationStrategy}
-]);
+  bootstrap [AppComponent]
 export class AppModule { }
