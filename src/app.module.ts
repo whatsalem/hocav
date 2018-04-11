@@ -23,7 +23,7 @@ import { routing } from './app.routing';
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule, routing ],
   declarations: [ AppComponent, HelloComponent, AppLayoutComponent, SiteLayoutComponent, AppHeaderComponent, SiteHeaderComponent, SiteFooterComponent, LoginComponent, DashboardComponent, HomeComponent, AboutComponent, RegisterComponent, ProfileComponent ],
-  bootstrap:    [ AppComponent , [
+  bootstrap(AppComponent, [
   ROUTER_PROVIDERS,
   {provide: LocationStrategy, useClass: HashLocationStrategy}
 ]);
